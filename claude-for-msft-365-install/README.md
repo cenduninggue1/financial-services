@@ -21,3 +21,9 @@ Then inside the session: `/claude-for-msft-365-install:setup`
 | `/claude-for-msft-365-install:consent` | Azure admin consent URL for the add-in's app registration |
 | `/claude-for-msft-365-install:update-user-attrs` | Write per-user config via Microsoft Graph extension attributes |
 | `/claude-for-msft-365-install:bootstrap` | Build the bootstrap endpoint — per-user MCP servers, skills, dynamic config |
+
+## Notes (personal)
+
+- I'm using this with **Bedrock** (us-east-1) — skipping the Vertex AI steps in the setup wizard.
+- The `bootstrap` command is the most useful one for my setup; run it after any user config changes.
+- TODO: figure out if `update-user-attrs` needs re-consent when adding new Graph scopes.
