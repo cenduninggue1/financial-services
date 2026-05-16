@@ -27,3 +27,5 @@ Then inside the session: `/claude-for-msft-365-install:setup`
 - I'm using this with **Bedrock** (us-east-1) — skipping the Vertex AI steps in the setup wizard.
 - The `bootstrap` command is the most useful one for my setup; run it after any user config changes.
 - TODO: figure out if `update-user-attrs` needs re-consent when adding new Graph scopes.
+- Tested on M365 tenant with ~50 users — manifest deploy via the admin center works fine, no issues with the XML format.
+- Note to self: the bootstrap endpoint URL needs to be publicly reachable; local dev tunnel (e.g. `ngrok`) works for testing.
