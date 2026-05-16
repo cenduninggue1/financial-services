@@ -44,3 +44,9 @@ Run `python3 scripts/check.py` before committing — it lints every manifest, ve
 1. Edit markdown files directly - changes take effect immediately
 2. Test commands with `/plugin:command-name` syntax
 3. Skills are invoked automatically when their trigger conditions match
+
+## Personal Notes
+
+- Forked primarily to study the agent-plugin / managed-agent dual-packaging pattern.
+- The `sync-agent-skills.py` script is the key piece to understand first — run it with `--dry-run` to see what would change without touching any files.
+- Good first exercise: add a new skill to `vertical-plugins/retail-banking/skills/` and trace it through to an agent bundle.
